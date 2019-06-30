@@ -13,3 +13,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.resize {
+  max-width:30%;
+  max-height:30%;
+}

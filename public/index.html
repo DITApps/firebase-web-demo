@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
     <!-- Bootstrap Material Design -->
     <link rel="stylesheet"
@@ -19,7 +19,7 @@
         <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
           <div style="font-size: 20px;" class="card-header">Temperature</div>
           <div class="card-body">
-            <h1 id="temperature" style="font-size: 75px;" class="card-title">°C</h1>
+            <h1 id="temperature" style="font-size: 55px;" class="card-title">°C</h1>
             <p class="card-text">Temperature expressed in Celsius degree.</p>
           </div>
         </div>
@@ -28,7 +28,7 @@
         <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
           <div style="font-size: 20px;" class="card-header">Humidity</div>
           <div class="card-body">
-            <h1 id="humidity" style="font-size: 75px;" class="card-title"><span>%</span></h1>
+            <h1 id="humidity" style="font-size: 55px;" class="card-title"><span>%</span></h1>
             <p class="card-text">Relative humidity, expressed in percentage.</p>
           </div>
         </div>
@@ -37,10 +37,11 @@
     <div class="row">
       <div class="col-lg-4 col-md-12 mb-4"> <!-- Status Column -->
         <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-          <div style="font-size: 20px;" class="card-header">Status</div>
+          <div style="font-size: 20px;" class="card-header">Device Status</div>
           <div class="card-body">
-            <h1 id="status" style="font-size: 75px;" class="card-title"><span>%</span></h1>
-            <p class="card-text">Connection status, represented by a heartbeat from the device.</p>
+            <!-- <h1 id="status" style="font-size: 75px;" class="card-title"><span>%</span></h1> -->
+            <img class="card-img-bottom" src="images/hearton.png" alt="Card image cap" id="heartID">
+            <!-- <p class="card-text">Connection status, represented by a heartbeat from the device.</p> -->
           </div>
         </div>
       </div>
@@ -48,7 +49,7 @@
         <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
           <div style="font-size: 20px;" class="card-header">Gas</div>
           <div class="card-body">
-            <h1 id="gas" style="font-size: 75px;" class="card-title"><span>%</span></h1>
+            <h1 id="gas" style="font-size: 50px;" class="card-title"><span>%</span></h1>
             <p class="card-text">Gas status, 1 if there is no gas detected 0 indicates gas detected.</p>
           </div>
         </div>
