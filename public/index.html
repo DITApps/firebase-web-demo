@@ -4,23 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
     <!-- Bootstrap Material Design -->
     <link rel="stylesheet"
           href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
           integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
           crossorigin="anonymous">
     <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
-    <style>
-      body {
-        background-color: #696969 !important;
-      }
-      .card {
-        margin: 0 auto; /* Added */
-        float: none; /* Added */
-        margin-bottom: 10px; /* Added */
-        margin-top: 50px
-      }
-    </style>
     <title>Firebase IoT Demo</title>
   </head>
   <body>
@@ -40,6 +30,17 @@
           <div class="card-body">
             <h1 id="humidity" style="font-size: 75px;" class="card-title"><span>%</span></h1>
             <p class="card-text">Relative humidity, expressed in percentage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4"> <!-- Status Column -->
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+          <div style="font-size: 20px;" class="card-header">Status</div>
+          <div class="card-body">
+            <h1 id="status" style="font-size: 75px;" class="card-title"><span>%</span></h1>
+            <p class="card-text">Connection status, represented by a heartbeat from the device.</p>
           </div>
         </div>
       </div>
